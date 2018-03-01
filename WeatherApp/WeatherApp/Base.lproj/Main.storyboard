@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-NK-gZf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-aI-9zL">
+                                <rect key="frame" x="0.0" y="113" width="375" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KbF-fU-iA7">
+                                <rect key="frame" x="16" y="277" width="343" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="msW-2t-LjC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
+                                <color key="textColor" red="0.63016108094268941" green="0.81746401085489984" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-on-uNd">
+                                <rect key="frame" x="65" y="359" width="245" height="54"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="45"/>
+                                <color key="textColor" red="0.73207266151158978" green="0.83482163835167333" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KbF-fU-iA7" secondAttribute="trailing" id="Ao4-38-imN"/>
+                            <constraint firstItem="UUm-NK-gZf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cnr-fS-HUM"/>
+                            <constraint firstItem="Ad8-aI-9zL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="DPb-Hb-5Il"/>
+                            <constraint firstItem="UUm-NK-gZf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LOI-kV-kbc"/>
+                            <constraint firstAttribute="trailing" secondItem="UUm-NK-gZf" secondAttribute="trailing" id="bTS-SH-0jz"/>
+                            <constraint firstAttribute="trailing" secondItem="Ad8-aI-9zL" secondAttribute="trailing" id="czE-Aa-B1p"/>
+                            <constraint firstItem="KbF-fU-iA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ffy-3L-1lQ"/>
+                            <constraint firstItem="Ad8-aI-9zL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="geR-oj-6kq"/>
+                            <constraint firstItem="tL1-on-uNd" firstAttribute="top" secondItem="KbF-fU-iA7" secondAttribute="bottom" constant="8" id="glC-iU-daZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UUm-NK-gZf" secondAttribute="bottom" id="kXg-0i-17J"/>
+                            <constraint firstItem="KbF-fU-iA7" firstAttribute="centerX" secondItem="tL1-on-uNd" secondAttribute="centerX" id="odJ-Jk-Bia"/>
+                            <constraint firstItem="KbF-fU-iA7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="318" id="sFx-Ml-tpm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="KbF-fU-iA7" id="QOO-hz-lBJ"/>
+                        <outlet property="searchBar" destination="Ad8-aI-9zL" id="Re3-bJ-NjN"/>
+                        <outlet property="temperatureLabel" destination="tL1-on-uNd" id="3fn-Qt-o7j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weather" width="744" height="1392"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>
